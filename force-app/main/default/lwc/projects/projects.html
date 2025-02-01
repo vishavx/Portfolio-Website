@@ -1,0 +1,36 @@
+<template>
+    <lightning-layout multiple-rows>
+
+        <lightning-layout-item padding="around-xsmall" size="12" medium-device-size="6" large-device-size="6"
+            class="project_class">
+            <div class="project_title slds-align_absolute-center">
+                <h1>PROJECTS</h1>
+            </div>
+            <div>
+                <template if:true={projectData}>
+                    <lightning-accordion>
+                        <template for:each={projectData} for:item="project">
+                            <lightning-accordion-section key={project.id} name={project.name} label={project.name}>
+                                <div class="body_class">
+                                    {project.description}
+                                    <p class="slds-m-top_small">
+                                        Technologies : {project.tech}
+                                    </p>                                    
+                                    <p class="slds-m-top_small" if:true={project.github}>
+                                        Website : <a target="_blank" href={project.github}>{project.github}</a>
+                                    </p>
+                                </div>
+                            </lightning-accordion-section>
+                        </template>
+                    </lightning-accordion>
+                </template>
+            </div>
+        </lightning-layout-item>
+        <lightning-layout-item padding="around-xsmall" size="12" medium-device-size="6" large-device-size="6">
+            <div class="projects_img">
+                <img src={projectsImage} />
+            </div>
+        </lightning-layout-item>
+    </lightning-layout>
+
+</template>

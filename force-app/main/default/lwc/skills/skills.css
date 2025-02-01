@@ -1,0 +1,61 @@
+.skills_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+}
+
+.skills_div {
+    padding-top: 20px;
+    color: #9daac6;
+    font-size: 1.5rem;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+
+.profile_title {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #657ba7;
+    margin-top: 30px;
+}
+
+lightning-progress-bar {
+    display: block;
+    width: 100%; /* Full width */
+    --slds-c-progress-bar-track-size: 10px; /* Sets the height of the progress bar */
+    position: relative;
+    transform: scaleX(0); /* Start with zero width for animation */
+    transform-origin: left;
+    animation: progressGrow 1.5s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+/* Animation for the progress bar */
+@keyframes progressGrow {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+/* only for mobiles */
+@media screen and (min-width:320px) and (max-width:640px)
+{
+    .profile_title {
+        font-family: sans-serif;
+        font-weight: 650;
+        font-size: 24px;
+        color: #566190de;
+        margin-top: 10px;
+    }
+    .skills_div {
+        padding-top: 8px;
+        color: #9daac6;
+        font-size: 0.8rem;
+        font-weight: 400;
+        word-spacing: 1.5px;
+    }
+}

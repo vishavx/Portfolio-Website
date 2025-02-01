@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="skill1" type="String" label="Skill 1" default="Salesforce Lightning"/>
+            <property name="skillBarValue1" type="String" label="Skill value 1" default="80"/>
+            
+            <property name="skill2" type="String" label="Skill 2" default="LWC"/>
+            <property name="skillBarValue2" type="String" label="Skill value 2" default="70"/>
+            
+            <property name="skill3" type="String" label="Skill 3" default="JavaScript"/>
+            <property name="skillBarValue3" type="String" label="Skill value 3" default="60"/>
+            
+            <property name="skill4" type="String" label="Skill 4" default="Apex, Triggers, Flows"/>
+            <property name="skillBarValue4" type="String" label="Skill value 4" default="50"/>
+            
+            <property name="skill5" type="String" label="Skill 5" default="SOQL"/>
+            <property name="skillBarValue5" type="String" label="Skill value 5" default="60"/>
+            
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,30 @@
+<template>
+    <div class="full-page-bg">
+        <h1>GG</h1>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12 slds-align_absolute-center">
+                <button class="slds-button slds-button_neutral" onclick={handleClick1}>Handicrafts</button>
+            </div>
+            <div class="slds-col slds-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12 slds-align_absolute-center">
+                <button class="slds-button slds-button_neutral" onclick={handleClick2}>Curtains</button>
+            </div>
+            <div class="slds-col slds-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12 slds-align_absolute-center">
+                <button class="slds-button slds-button_neutral" onclick={handleClick3}>Bedsheets</button>
+            </div>
+        </div>
+    </div>
+    <template if:true={filteredProducts} for:each={filteredProducts} for:item="product">
+        <lightning-card variant="Narrow" key={product.Id}>
+            <div class="slds-grid">
+                <div class="img_class slds-col slds-size_6-of-12">
+                    <lightning-formatted-rich-text value={product.Product_Image__c}></lightning-formatted-rich-text>
+                </div>
+                <div class="product_data slds-col slds-size_6-of-12">
+                    <p class="slds-m-top_large">{product.Name}</p>
+                    <p class="slds-m-top_medium">{product.Product_Description__c}</p>
+                    <p class="slds-m-top_medium">{product.Category__c}</p>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+</template>

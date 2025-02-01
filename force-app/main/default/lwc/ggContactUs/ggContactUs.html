@@ -1,0 +1,51 @@
+<template>
+    <div class="web-to-lead-container">
+        <h1 class="form-title">Get in Touch</h1>
+        <!-- Web-to-Lead Form -->
+        <form 
+            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DdM00000E42rC" 
+            method="POST" 
+            class="web-to-lead-form"
+        >
+            <!-- Hidden Fields -->
+            <input type="hidden" name="oid" value="00DdM00000E42rC">
+            <input type="hidden" name="retURL" value="https://vishavgarg-dev-ed.trailblaze.my.site.com/ggtest">
+
+            <!-- Form Fields -->
+            <div class="form-field">
+                <label for="first_name" class="form-label">First Name</label>
+                <input id="first_name" maxlength="40" name="first_name" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="last_name" class="form-label">Last Name</label>
+                <input id="last_name" maxlength="80" name="last_name" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" maxlength="80" name="email" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="country" class="form-label">Country</label>
+                <input id="country" maxlength="40" name="country" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="city" class="form-label">City</label>
+                <input id="city" maxlength="40" name="city" size="20" type="text" class="form-input" />
+            </div>
+
+            <div class="form-field">
+                <label for="state" class="form-label">State/Province</label>
+                <input id="state" maxlength="20" name="state" size="20" type="text" class="form-input" />
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-actions">
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</template>

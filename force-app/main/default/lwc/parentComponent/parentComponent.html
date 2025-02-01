@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="This is Parent Component">
+        <lightning-card> 
+            <c-child-component1 name={fname}></c-child-component1>
+        </lightning-card>
+       
+        <br>
+
+        <lightning-card>
+            <c-child-component2 ongetsearchevent={handleEvent}></c-child-component2>
+            
+        </lightning-card>
+        <lightning-card>
+            <p>{sname}</p>
+        </lightning-card>
+
+    </lightning-card>
+
+</template>

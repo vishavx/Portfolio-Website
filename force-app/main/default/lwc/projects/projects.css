@@ -1,0 +1,41 @@
+.project_class {
+    padding-left: 50px;
+    margin-top: 80px;
+}
+.project_title {
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    color: #657ba7;
+    margin-bottom: 30px;
+}
+
+.body_class{
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 2px;
+    color:#46536e;
+}
+
+/* only for mobiles */
+@media screen and (min-width:320px) and (max-width:640px)
+{
+    .project_class {
+        padding-left: 0px;
+        margin-top: 10px;
+    }
+    .project_title {
+        font-family: sans-serif;
+        font-weight: 750;
+        font-size: 25px;
+        color: #657ba7;
+        
+    }
+    
+    .body_class{
+        font-size: 12px;
+        font-weight: 300;
+        word-spacing: 1.5px;
+        color:#46536e;
+    }
+}

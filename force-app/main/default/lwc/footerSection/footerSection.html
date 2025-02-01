@@ -1,0 +1,38 @@
+<template>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Vishav's Portfolio</h3>
+                    <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀</p>
+                </div>
+                <div class="col">
+                    <h3>Quick Links</h3>
+                    <!-- <ul>
+                        <li><a href="https://vishavgarg-dev-ed.trailblaze.my.site.com/" class="slds-align_absolute-center">Home</a></li>
+                        <li><a href="https://vishavgarg-dev-ed.trailblaze.my.site.com/projects" class="slds-align_absolute-center">Projects</a></li>
+                        <li><a href="https://vishavgarg-dev-ed.trailblaze.my.site.com/skills" class="slds-align_absolute-center">Skills</a></li>
+                        <li><a href="https://vishavgarg-dev-ed.trailblaze.my.site.com/certifications" class="slds-align_absolute-center">Certifications</a></li>
+                    </ul> -->
+                    <ul>
+                        <li><div class="slds-align_absolute-center" onclick={handleClick} data-id="1">Home</div></li>
+                        <li><div class="slds-align_absolute-center" onclick={handleClick} data-id="2">Projects</div></li>
+                        <li><div class="slds-align_absolute-center" onclick={handleClick} data-id="3">Skills</div></li>
+                        <li><div class="slds-align_absolute-center" onclick={handleClick} data-id="4">Certifications</div></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Contact Info</h3>
+                    <div class="contact_info">
+                        <div class="contact_class slds-align_absolute-center">
+                            <img src={contact_img} class="icon_image"/><p>+91-985572XXXX</p>
+                        </div>
+                        <div class="mail_class slds-align_absolute-center slds-m-left_xx-large">
+                            <img src={mail_img} class="icon_image"/><p>vishavgarg90@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</template>

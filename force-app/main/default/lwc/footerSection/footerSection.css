@@ -1,0 +1,109 @@
+
+
+.footer {
+    background-color: #1c1c1c; 
+    color: #8390ad; 
+    padding: 30px 0; /* Space above and below the footer content */
+    font-size: 14px;
+    font-weight: 400;
+    word-spacing: 2px;
+    margin-top: 30px;
+}
+
+
+.footer .container {
+    max-width: 1200px; /* Restrict the width of the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add some horizontal padding */
+}
+
+/* Footer Rows and Columns */
+.footer .row {
+    display: flex;
+    flex-wrap: wrap; /* Ensure it adjusts well on smaller screens */
+    justify-content: space-between; /* Evenly distribute the columns */
+    gap: 20px; /* Add spacing between columns */
+}
+
+.footer .col {
+    flex: 1; /* Each column takes up equal space */
+    min-width: 250px; /* Minimum width for columns */
+    padding: 10px; /* Inner padding for spacing */
+}
+
+/* Headings in Footer */
+.footer h3 {
+    font-size: 18px;
+    font-weight: 400;
+    word-spacing: 2px;
+    color: #657ba7; /* Highlight the heading with a gold accent */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Footer Paragraphs */
+.footer p {
+    line-height: 1.6; /* Improve readability */
+    color: #8390ad; /* Softer text color for paragraphs */
+    margin-bottom: 10px;
+}
+
+/* Quick Links Styling */
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li div {
+    color: #8390ad; /* White text for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer ul li div:hover {
+    color: #657ba7; /* Gold hover color for links */
+    cursor: grab;
+}
+
+/* Contact Info Styling */
+.contact_info {
+    margin-top: 10px;
+}
+
+.contact_class, .mail_class {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact_class p, .mail_class p {
+    margin-left: 10px; /* Space between icon and text */
+    color: #8390ad;
+}
+
+.icon_image {
+    width: 20px; 
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column; /* Stack columns on smaller screens */
+        align-items: center;
+    }
+
+    .footer .col {
+        text-align: center; /* Center-align content on smaller screens */
+    }
+
+    .footer ul li div {
+        display: inline-block; /* Make links easier to tap */
+    }
+}
